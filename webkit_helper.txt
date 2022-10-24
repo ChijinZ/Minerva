@@ -1,0 +1,51 @@
+!begin helperlines
+
+<new Window> = <DOMWindow>;
+
+<new SVGGlyphRefElement> = document.createElementNS("http://www.w3.org/2000/svg", "glyphRef");
+<new SVGAltGlyphDefElement> = document.createElementNS("http://www.w3.org/2000/svg", "altGlyphDef");
+<new SVGGlyphElement> = document.createElementNS("http://www.w3.org/2000/svg", "glyph");
+<new SVGTRefElement> = document.createElementNS("http://www.w3.org/2000/svg", "tref");
+<new SVGAnimateColorElement> = document.createElementNS("http://www.w3.org/2000/svg", "animateColor");
+<new SVGFontFaceElement> = document.createElementNS("http://www.w3.org/2000/svg", "font-face");
+<new SVGFontFaceUriElement> = document.createElementNS("http://www.w3.org/2000/svg", "font-face-uri");
+<new SVGFontFaceNameElement> = document.createElementNS("http://www.w3.org/2000/svg", "font-face-name");
+<new SVGMissingGlyphElement> = document.createElementNS("http://www.w3.org/2000/svg", "missing-glyph");
+<new SVGHKernElement> = document.createElementNS("http://www.w3.org/2000/svg", "hkern");
+<new SVGAltGlyphElement> = document.createElementNS("http://www.w3.org/2000/svg", "altglyph");
+<new SVGVKernElement> = document.createElementNS("http://www.w3.org/2000/svg", "vkern");
+<new SVGFontFaceSrcElement> = document.createElementNS("http://www.w3.org/2000/svg", "font-face-src");
+<new SVGAltGlyphItemElement> = document.createElementNS("http://www.w3.org/2000/svg", "altGlyphItem");
+<new SVGFontElement> = document.createElementNS("http://www.w3.org/2000/svg", "font");
+<new SVGFontFaceFormatElement> = document.createElementNS("http://www.w3.org/2000/svg", "font-face-format");
+
+
+<new MathMLMathElement> = document.createElement("math");
+<new HTMLModelElement> = document.createElement("model");
+
+<new CanvasRenderingContext2D> = <HTMLCanvasElement>.getContext("2d");
+<new WebGLRenderingContext> = <HTMLCanvasElement>.getContext("webgl");
+<new WebGL2RenderingContext> = <HTMLCanvasElement>.getContext("webgl2");
+<new ANGLEInstancedArrays> = <WebGLRenderingContext>.getExtension("ANGLE_instanced_arrays");
+<new EXTBlendMinMax> = <WebGLRenderingContext>.getExtension("EXT_blend_minmax");
+<new EXTColorBufferHalfFloat> = <WebGLRenderingContext>.getExtension("EXT_color_buffer_half_float");
+<new EXTTextureCompressionRGTC> = <WebGLRenderingContext>.getExtension("EXT_texture_compression_rgtc");
+<new EXTTextureFilterAnisotropic> = <WebGLRenderingContext>.getExtension("EXT_texture_filter_anisotropic");
+<new EXTsRGB> = <WebGLRenderingContext>.getExtension("EXT_sRGB");
+<new OESStandardDerivatives> = <WebGLRenderingContext>.getExtension("OES_standard_derivatives");
+<new OESTextureHalfFloat> = <WebGLRenderingContext>.getExtension("OES_texture_half_float");
+<new OESVertexArrayObject> = <WebGLRenderingContext>.getExtension("OES_vertex_array_object");
+<new WebGLColorBufferFloat> = <WebGLRenderingContext>.getExtension("WEBGL_color_buffer_float");
+<new WebGLCompressedTextureASTC> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_astc");
+<new WebGLCompressedTextureATC> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_atc");
+<new WebGLCompressedTextureETC> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_etc");
+<new WebGLCompressedTextureETC1> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_etc1");
+<new WebGLCompressedTexturePVRTC> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_pvrtc");
+<new WebGLCompressedTextureS3TC> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_s3tc");
+<new WebGLCompressedTextureS3TCsRGB> = <WebGLRenderingContext>.getExtension("WEBGL_compressed_texture_s3tc_srgb");
+<new WebGLDebugRendererInfo> = <WebGLRenderingContext>.getExtension("WEBGL_debug_renderer_info");
+<new WebGLDebugShaders> = <WebGLRenderingContext>.getExtension("WEBGL_debug_shaders");
+<new WebGLDepthTexture> = <WebGLRenderingContext>.getExtension("WEBGL_depth_texture");
+<new WebGLDrawBuffers> = <WebGLRenderingContext>.getExtension("WEBGL_draw_buffers");
+
+!end helperlines
