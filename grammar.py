@@ -95,7 +95,7 @@ class MemoryAnalysisHelper:
         """)
         self.Clib = self.ffi.dlopen(
             os.path.split(os.path.realpath(__file__))[0] + "/mod_ref_helper/libgenerator_helper.so")
-        self.inner = self.Clib.initialize_helper()
+        self.inner = self.Clib.initialize_helper(random.randint(1, 10000))
         print("successfully initialize MemoryAnalysisHelper")
 
     def add_creator_line(self, orginal_rule: str):
