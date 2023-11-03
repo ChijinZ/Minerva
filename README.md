@@ -8,6 +8,8 @@ Basic idea: it extracts memory-level mod-ref relations between APIs via dynamic 
 
 **NOTE**: This is just a prototype to reproduce experiments in our research paper. Some features are built as dynamic shared objects and their source code is not published.
 
+**NOTE 2**: According to our experiments, SaGe (https://github.com/ChijinZ/SaGe-Browser-Fuzzer), another browser fuzzer, has a better performance compared to Minerva. In addition, SaGe is easier to use IMO. Please try it.
+
 ## Environment
 
 We tested Minerva on Ubuntu 20.04 and Ubuntu 22.04.
