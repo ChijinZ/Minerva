@@ -84,7 +84,7 @@ class MemoryAnalysisHelper:
     def __init__(self):
         self.ffi = FFI()
         self.ffi.cdef("""
-            void* initialize_helper();
+            void* initialize_helper(uint64_t random_seed);
             void add_creator_line(void* helper, char* original_rule);
             void prepared(void* helper);
             void update_weights(void* helper, char* original_rule);
