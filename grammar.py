@@ -87,6 +87,7 @@ class MemoryAnalysisHelper:
             void* initialize_helper(uint64_t random_seed);
             void add_creator_line(void* helper, char* original_rule);
             void prepared(void* helper);
+            void reset_random_seed(void* helper, uint64_t random_seed);
             void update_weights(void* helper, char* original_rule);
             size_t random_choice_with_weights(void* helper);
             void reset_weights(void* helper);
@@ -117,6 +118,9 @@ class MemoryAnalysisHelper:
 
     def reset_weights(self):
         self.Clib.reset_weights(self.inner)
+
+    def reset_random_seed(self, random_seed: int):
+        self.Clib.reset_random_seed(self.inner, random_seed)
 
     def __del__(self):
         self.Clib.free_helper(self.inner)
